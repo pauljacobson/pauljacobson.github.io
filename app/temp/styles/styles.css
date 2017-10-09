@@ -366,19 +366,15 @@ body {
   font-size: 1.3rem;
   line-height: 1.5;
 }
-h2 {
+h2, h3 {
   font-family: "Lora", serif;
 }
-.image_body {
-  padding: 0.625rem;
-  /* display: flex; */
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+h2 {
+  font-size: 2rem;
 }
-.image_body--image {
-    /* flex: 1; */
-  }
+h3 {
+  font-size: 1.75rem;
+}
 /* @define-mixin clearfix {
   &::after {
     content: "";
@@ -392,3 +388,15 @@ $mainBlue: #2f5572;
 $mainOrange: #d59541;
 
 */
+.birthday_site--container {
+  
+}
+.birthday_site--text {
+  
+}
+.image_body--image {
+  display: block;
+  padding: 0.625rem;
+  margin-left: auto;
+  margin-right: auto;
+}
