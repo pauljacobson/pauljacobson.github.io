@@ -1,0 +1,22 @@
+body {
+  padding: 1.25rem;
+  max-width: 60rem;
+  margin: 0 auto;
+  font-family: "PT Sans", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+h2 {
+  font-family: "Lora", serif;
+}
+
+.image_body {
+  padding: 0.625rem;
+  /* display: flex; */
+  justify-content: center;
+
+  &--image {
+    /* flex: 1; */
+  }
+}

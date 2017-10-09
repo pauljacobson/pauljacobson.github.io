@@ -1,0 +1,50 @@
+/* A handy transition effect for mobile menus */
+
+.modal {
+  position: fixed;
+  z-index: 5;
+  background-color: rgba(255, 255, 255, .94);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0; /* This hides the modal even though it remains layered on top */
+  visibility: hidden;
+  transform: scale(1.2);
+  transition: all .2s ease-out;
+
+  &--is-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
+
+  &__inner {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__description {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 1.65;
+  }
+
+  &__close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 2rem;
+    transform: scaleX(1.2); /* This stretches the X so it looks more like an icon */
+    transform-origin: 100% 0; /* So this opens from the top right */
+    color: $mainBlue;
+    cursor: pointer;
+
+    &:hover {
+      color: $mainOrange;
+    }
+  }
+}
