@@ -1,0 +1,16 @@
+@import url(https://fonts.googleapis.com/css?family=Manuale);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+body {
+  padding: 20px;
+}
+
+h2 {
+  font-family: "Manuale";
+  font-size: 2rem;
+}
+
+p {
+  font-style: "Raleway";
+  font-size: 1.3rem;
+}
